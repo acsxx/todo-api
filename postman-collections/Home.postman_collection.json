@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "aa0c58ae-546b-429d-82fa-25e6d75da655",
+		"name": "Home",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17166936"
+	},
+	"item": [
+		{
+			"name": "dashboard",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/dashboard",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"dashboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"todo\": \"complated private todo\",\r\n    \"isDone\": true,\r\n    \"isPrivate\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/create-todo",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"create-todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "active-todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/active-todos",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"active-todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "complated-todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/complated-todos",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"complated-todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-team",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"nteam\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/create-team",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"create-team"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-team",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/list-team",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"list-team"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"team\": \"testTeam\",\r\n    \"username\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/add-user",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"add-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-members",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/list-members",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"list-members"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
