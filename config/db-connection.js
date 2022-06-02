@@ -1,6 +1,6 @@
 const { Sequelize } = require("sequelize");
 
-const db = new Sequelize("ToDo", "postgres", "171213022", {
+const db = new Sequelize("ToDo", "DBUSER", "DBPASSWORD", {
   host: "localhost",
   dialect: "postgres",
 });
